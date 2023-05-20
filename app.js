@@ -137,4 +137,29 @@ $(document).ready(function() {
    // Append the table to the container div
    $('#container').append($h5, $table);
 
+
+    // Year 5 --------------------------------------------------------------------------------------------->
+
+    // Break your wand! Remove the element that contains your wand
+   $h4Wand.remove();
+  
+    // Class was hard! Drink all your butter beer! Remove the butter beer from the list
+   $('li:contains("Butter Beer")').remove();
+  
+   // Get a new wand. Add the same element back with new text describing your new wand
+   let $newWand = $('<h4>').text('Elder Wand With Phoenix Feather Core');
+   $h4Pet.after($newWand); // Be sure to insert it after your pet in the DOM
+  
+   // Make your new wand stand out by adding a color of indigo (or whatever color you like). But do it with magic (jQuery): Don't add this css in your main.css file
+   $newWand.css('color', 'indigo');
+  
+   // Send your pet on a spy mission. Remove your pet from the DOM and put it somewhere else in your HTML
+   let $pet = $('.' + petClass);
+   $pet.detach();
+   $('#spy-mission').append($pet);
+  
+   // Have your pet come back. Remove your pet from its current location and put it back in its original location
+   $pet.detach();
+   $container.append($pet);
+
   });
