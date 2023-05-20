@@ -176,4 +176,15 @@ $(document).ready(function() {
         // Fix your pet's leash by removing the class 'cabbage'
         $li5.removeClass('cabbage');
 
+    // Year 7 --------------------------------------------------------------------------------------------->
+      
+        // Update your class schedule to read 'Fall 2018'
+        $('h5').text('Fall 2018');
+      
+        // Append a list item with the text 'Butter beer' as the first item in the unordered list
+        $ul.prepend($('<li>').text('Butter beer'));
+      
+        // Replace the unordered list's attribute value of 'trunk' with 'chest'
+        $ul.attr('storage', 'chest');
+
   });
