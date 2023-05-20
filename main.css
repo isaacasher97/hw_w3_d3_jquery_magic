@@ -18,4 +18,18 @@ body {background-color: #F8F7FF}/*or any color of your choosing*/
 ul {
     list-style-type: none;
   }
+
+  /* ---------- Year 4 ----------- */
+
+  /* In your main.css file, add a gray 1px solid border around your table, th elements and td elements */
+  table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table on the page */
+  }
+  
+  /* In your main.css file, add a rule that will center your table on the page */
+  th, td {
+    border: 1px solid gray;
+  }
   

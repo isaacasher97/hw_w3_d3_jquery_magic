@@ -36,7 +36,7 @@ $(document).ready(function() {
     // Step 9: Create an h4 element with your pet's name and add a class for the pet type
     let $h4Pet = $('<h4>');
     $h4Pet.text('Storm');
-    $h4Pet.addClass('owl'); // Replace 'owl' with your pet type
+    $h4Pet.addClass('Cat'); // Replace 'owl' with your pet type
     $container.append($h4Pet);
     
     // Step 10: Create an h4 element with your wand name
@@ -74,5 +74,67 @@ $(document).ready(function() {
 
     // Step 15: Append the unordered list to the container div
     $container.append($ul);
+
+    // Year 4 --------------------------------------------------------------------------------------------->
     
+   // Create an h5 element with text 'Spring 2017'
+   let $h5 = $('<h5>').text('Spring 2017');
+
+   // Make A table
+   let $table = $('<table>');
+ 
+   // Create thead element
+   let $thead = $('<thead>');
+ 
+   // Create th elements and add text to them
+   let $th1 = $('<th>').text('Day');
+   let $th2 = $('<th>').text('Classes');
+ 
+   // Append the th elements to the thead element
+   $thead.append($th1, $th2);
+ 
+   // Append the thead element inside the table
+   $table.append($thead);
+ 
+   // Create tbody element
+   let $tbody = $('<tbody>');
+ 
+   // Create tr elements for each day
+   let $trMonday = $('<tr>');
+   let $trTuesday = $('<tr>');
+   let $trWednesday = $('<tr>');
+   let $trThursday = $('<tr>');
+   let $trFriday = $('<tr>');
+ 
+   // Create td elements for each day and classes
+   let $tdMondayDay = $('<td>').text('Monday');
+   let $tdMondayClasses = $('<td>').text('Defense Against the Dark Arts, Quidditch practice');
+   let $tdTuesdayDay = $('<td>').text('Tuesday');
+   let $tdTuesdayClasses = $('<td>').text('Herbology, Potions');
+   let $tdWednesdayDay = $('<td>').text('Wednesday');
+   let $tdWednesdayClasses = $('<td>').text('Transfiguration, Charms');
+   let $tdThursdayDay = $('<td>').text('Thursday');
+   let $tdThursdayClasses = $('<td>').text('Divination, History Of Magic');
+   let $tdFridayDay = $('<td>').text('Friday');
+   let $tdFridayClasses = $('<td>').text('Go to Hogsmeade, Visit Hagrid');
+ 
+   // Append the td elements to the tr elements
+   $trMonday.append($tdMondayDay, $tdMondayClasses);
+   $trTuesday.append($tdTuesdayDay, $tdTuesdayClasses);
+   $trWednesday.append($tdWednesdayDay, $tdWednesdayClasses);
+   $trThursday.append($tdThursdayDay, $tdThursdayClasses);
+   $trFriday.append($tdFridayDay, $tdFridayClasses);
+ 
+   // Append the tr elements to the tbody
+   $tbody.append($trMonday, $trTuesday, $trWednesday, $trThursday, $trFriday);
+ 
+   // Append the tbody inside the table
+   $table.append($tbody);
+ 
+   // Insert the h5 element before the table
+   $h5.insertBefore($table);
+ 
+   // Append the table to the container div
+   $('#container').append($h5, $table);
+
   });
