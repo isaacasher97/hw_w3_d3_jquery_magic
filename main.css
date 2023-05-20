@@ -1,1 +1,21 @@
 body {background-color: #F8F7FF}/*or any color of your choosing*/
+
+/* ---------- Year 2 ----------- */
+
+/* In your main.css add an attribute of font-family: fantasy; to all elements that have a class that matches your pet's class
+ */
+.owl {
+    font-family: fantasy;
+  }  
+
+/* ---------- Year 3 ----------- */
+/* In CSS, give the items with a class of "secret" an attribute of opacity: 0.5;: */
+.secret {
+    opacity: 0.5;
+  }
+
+/* In CSS, remove the bullet points from the list items: */
+ul {
+    list-style-type: none;
+  }
+  

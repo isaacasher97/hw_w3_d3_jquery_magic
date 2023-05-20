@@ -4,13 +4,13 @@ $(document).ready(function() {
     const $container = $('#container');
     
     // Step 2: Console log $container
-    console.log($container);
+    // console.log($container);
     
     // Step 3: Create an h1 element and set it to a variable called $h1
     let $h1 = $('<h1>');
 
     // Console log $h1
-    console.log($h1);
+    // console.log($h1);
     
     // Step 4: Add text inside the h1 element
     $h1.text('Hogwarts');
@@ -21,7 +21,7 @@ $(document).ready(function() {
     // Step 6: add a CSS rule to align all text center inside the body
     $('body').css('text-align', 'center');
 
-    // Year 2
+    // Year 2 --------------------------------------------------------------------------------------------->
 
     // Step 7: Create an h2 element with your name
     let $h2 = $('<h2>');
@@ -49,10 +49,30 @@ $(document).ready(function() {
     $('.' + petClass).css('font-family', 'fantasy');
     
     // Console log $h1, $h2, $h3, $h4Pet, and $h4Wand
-    console.log($h1);
-    console.log($h2);
-    console.log($h3);
-    console.log($h4Pet);
-    console.log($h4Wand);
+    // console.log($h1);
+    // console.log($h2);
+    // console.log($h3);
+    // console.log($h4Pet);
+    // console.log($h4Wand);
 
+    // Year 3 --------------------------------------------------------------------------------------------->
+
+    // Step 12: Create an unordered list with the attribute of storage and a value of trunk
+    let $ul = $('<ul>');
+    $ul.attr('storage', 'trunk');
+    
+    // Step 13: Create list items and add classes as specified
+    let $li1 = $('<li>').text('Butter Beer'); // butter beer
+    let $li2 = $('<li>').text('Invisibility Cloak').addClass('secret'); // invisibility cloak (add a class of secret)
+    let $li3 = $('<li>').text('Magic Map').addClass('secret'); // magic map (add a class of secret)
+    let $li4 = $('<li>').text('Time Turner').addClass('secret'); // time turner (add a class of secret)
+    let $li5 = $('<li>').text('Leash').addClass(petClass); // Use the same class as your pet
+    let $li6 = $('<li>').text('Bertie Bott\'s Every Flavor [Jelly] Beans.').addClass(petClass); // Create a list item with a class matching your pet's class
+
+    // Step 14: Append the list items to the unordered list
+    $ul.append($li1, $li2, $li3, $li4, $li5, $li6);
+
+    // Step 15: Append the unordered list to the container div
+    $container.append($ul);
+    
   });
