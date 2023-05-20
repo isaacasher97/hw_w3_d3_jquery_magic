@@ -162,4 +162,18 @@ $(document).ready(function() {
    $pet.detach();
    $container.append($pet);
 
+    // Year 6 --------------------------------------------------------------------------------------------->
+      
+        // Hide all your belongings with a class of 'secret'
+        $('.secret').hide('slow');
+        
+        // Delay showing your secret elements to simulate roommate falling asleep + Use jQuery method show to reveal all of your belongings with a class of secret (give an argument of 'slow' - to see this function in action)
+        $('.secret').delay(2000).show('slow');
+        
+        // Transmogrify your pet's leash into half cabbage by adding the class 'cabbage'
+        $li5.addClass('cabbage');
+        
+        // Fix your pet's leash by removing the class 'cabbage'
+        $li5.removeClass('cabbage');
+
   });

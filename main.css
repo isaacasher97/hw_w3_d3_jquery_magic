@@ -32,4 +32,13 @@ ul {
   th, td {
     border: 1px solid gray;
   }
+
+  /* ---------- Year 6 ----------- */
+
+  /* Add a CSS attribute for elements with class 'cabbage' in main.css */
+  
+  .cabbage {
+    color: CHARTREUSE;
+  }
+  
   
